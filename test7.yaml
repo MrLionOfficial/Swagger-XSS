@@ -1,0 +1,20 @@
+swagger: '2.0'
+securityDefinitions:
+  a:
+    type: oauth2
+    authorizationUrl: http://bing.com
+info:
+  version: "1.0.0"
+  title: <img src=x onerror=print(1)>
+  description: <a href=http://bing.com/>Click Me</a>
+  description1: <iframe src=https://bing.com></iframe>
+  description2: &lt;script&gt;alert(&#39;XSS&#39;)&lt;/script&gt;
+  description3: &lt;scr&lt;script&gt;ipt&gt;alert(&#39;XSS&#39;)&lt;/scr&lt;script&gt;ipt&gt;
+  description4: &quot;&gt;&lt;script&gt;alert(&#39;XSS&#39;)&lt;/script&gt;
+  
+paths:
+  /:
+    get:
+      responses:
+        200:
+          description: Successful response
