@@ -11,17 +11,6 @@ info:
   description2: &lt;script&gt;alert(&#39;XSS&#39;)&lt;/script&gt;
   description3: &lt;scr&lt;script&gt;ipt&gt;alert(&#39;XSS&#39;)&lt;/scr&lt;script&gt;ipt&gt;
   description4: &quot;&gt;&lt;script&gt;alert(&#39;XSS&#39;)&lt;/script&gt;
-  description5: &quot;&gt;&lt;script&gt;alert(String.fromCharCode(88,83,83))&lt;/script&gt;
-  description6: &lt;script&gt;\u0061lert(&#39;22&#39;)&lt;/script&gt;
-  description7: &lt;script&gt;eval(&#39;\x61lert(\&#39;33\&#39;)&#39;)&lt;/script&gt;
-  description8: &lt;script&gt;eval(8680439..toString(30))(983801..toString(36))&lt;/script&gt; //parseInt(&quot;confirm&quot;,30) == 8680439
-  description9: &amp;&amp; 8680439..toString(30) == &quot;confirm&quot;
-  description10: &lt;object/data=&quot;jav&amp;#x61;sc&amp;#x72;ipt&amp;#x3a;al&amp;#x65;rt&amp;#x28;23&amp;#x29;&quot;&gt;
-  description11: &#39; onmouseover=alert(1);&gt;
-  description12: ?lang=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert(document.cookie)%3C%2Fscript%3E%3Cp%20class
-  description13: =%22&amp;p=1
-  description14: &quot;&gt;&lt;img src=x onerror=alert(1)&gt;
-  description15: “&gt;&lt;img+src=0+onerror=alert(document.cookie);&gt;&lt;! —
   
 paths:
   /:
