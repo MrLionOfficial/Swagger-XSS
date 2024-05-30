@@ -1,0 +1,15 @@
+swagger: '2.0'
+securityDefinitions:
+  a:
+    type: oauth2
+    authorizationUrl: javascript:alert(document.domain)//
+info:
+  version: "1.0.0"
+  title: <img src=x onerror=print(1)>
+  description: <a href=http://bing.com/>Click Me</a>
+paths:
+  /:
+    get:
+      responses:
+        200:
+          description: Successful response
