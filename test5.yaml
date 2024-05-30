@@ -7,7 +7,7 @@ info:
   version: "1.0.0"
   title: <img src=x onerror=print(1)>
   description: <a href=http://bing.com/>Click Me</a>
-  description: <ifrane src=https://bing.com></iframe>
+  description: <iframe src=https://bing.com></iframe>
   description:   &lt;script&gt;alert(&#39;XSS&#39;)&lt;/script&gt;
   description: &lt;scr&lt;script&gt;ipt&gt;alert(&#39;XSS&#39;)&lt;/scr&lt;script&gt;ipt&gt;
   description: &quot;&gt;&lt;script&gt;alert(&#39;XSS&#39;)&lt;/script&gt;
