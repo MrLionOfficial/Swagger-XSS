@@ -1,0 +1,17 @@
+swagger: '2.0'
+securityDefinitions:
+  a:
+    type: oauth2
+    authorizationUrl: javascript:alert(document.domain)//
+info:
+  version: "1.0.0"
+  title: XSS img test
+  description: onload="alert(1)" 
+  <img src=x onerror=print(1)>
+  <u>demo</u>
+paths:
+  /:
+    get:
+      responses:
+        200:
+          description: Successful response
