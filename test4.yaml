@@ -1,0 +1,15 @@
+swagger: '2.0'
+securityDefinitions:
+  a:
+    type: oauth2
+    authorizationUrl: javascript:alert(document.domain)//
+info:
+  version: "1.0.0"
+  title: <img src=x onerror=print(1)>
+  description: <a href=j&#97v&#97script:&#97lert(document.cookie)>ClickMe</a>
+paths:
+  /:
+    get:
+      responses:
+        200:
+          description: Successful response
