@@ -1,0 +1,9 @@
+{
+    "url": "https://raw.githubusercontent.com/MrLionOfficial/Swagger-XSS/main/swagger-html.yaml",
+    "urls": [
+        {
+            "url": "https://raw.githubusercontent.com/MrLionOfficial/Swagger-XSS/main/swagger-html.yaml",
+            "name": "Foo"
+        }
+    ]
+}
